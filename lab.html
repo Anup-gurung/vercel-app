@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab.css">
+    <title>The Student Form</title>
+</head>
+<body>
+    <!-- creating the general big div for all the contains -->
+    <div class="container1"> 
+
+        <!-- using headTag to genaralized -->
+        <h3>Student Detail </h3>
+        <!-- cresting forms for the project -->
+        <form action="" method="get" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="on">
+         <div class="row">
+            <!-- creating student name input place -->
+          <div class="col-1">
+                <label for="name"> Student Name : </label></br>
+            </div>
+             <div class="col-2">
+                <input type="text" id="name" name="stdtname" placeholder="STUDENT NAME" autocomplete="off"><br>
+                <small></small>
+          </div>
+          </div>
+          <!-- creating student_id input place -->
+            <div class="row">
+                <div class="col-1">
+                    <label >Student ID : </label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="id" name="stdid" placeholder="SOC[7 digits]" autocomplete="off">
+                    <small></small>
+                </div>
+            </div>
+            <br>
+            <!-- using button to add the values -->
+            <div class="row form-action-buttons" >
+                <input type="submit" value="ADD" id="submit">
+            </div>
+        </form>
+      </div>
+
+      <script src="lab.js"></script>
+</body>
+</html>
